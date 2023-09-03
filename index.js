@@ -10,8 +10,8 @@ const downloadImage = async (url, filename) => {
 };
 
 app.get('/welcome-image', async (req, res) => {
-  const username = req.query.username || 'Guru322';
-  const guildName = req.query.guildName || 'GURUBOTS';
+  const username = req.query.username || 'Ryan';
+  const guildName = req.query.guildName || 'Rokumo';
   const guildIcon = req.query.guildIcon || 'https://i.ibb.co/G5mJZxs/rin.jpg';
   const memberCount = req.query.memberCount || '120';
   const avatar = req.query.avatar || 'https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg';
@@ -49,8 +49,8 @@ app.get('/welcome-image', async (req, res) => {
   }
 });
 app.get('/leave-image', async (req, res) => {
-    const username = req.query.username || "Guru322";
-    const guildName = req.query.guildName || "GURUBOTS";
+    const username = req.query.username || "Ryan";
+    const guildName = req.query.guildName || "Rokumo";
     const guildIcon = req.query.guildIcon || "https://i.ibb.co/G5mJZxs/rin.jpg";
     const memberCount = req.query.memberCount || "120";
     const avatar = req.query.avatar || "https://i.ibb.co/1s8T3sY/48f7ce63c7aa.jpg";
@@ -115,7 +115,7 @@ app.get('/levelup-image', async (req, res) => {
   });
 
   app.get('/rankup-image', async (req, res) => {
-    const username = req.query.username || 'GURU';
+    const username = req.query.username || 'Ryan';
     const currxp = req.query.currxp || '100';
     const needxp = req.query.needxp || '1000';
     const level = req.query.level || '6';
